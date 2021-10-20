@@ -21,6 +21,41 @@
       "api_key": [
         {
           "current_key": "AIzaSyBZ3EoEyTdiqiNb5BA3CPFq1dgNEN82GnE"
+        },
+        {
+          "current_key": "AIzaSyC8HWxJl3H3dswTH7NbzB5wWNiIzLQeIHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315055651663-cu4mfc08tqk61p51mosos1ge42dos1ce.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315055651663:android:989336b4e68fede6c8a33a",
+        "android_client_info": {
+          "package_name": "com.chivonotificationtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315055651663-cu4mfc08tqk61p51mosos1ge42dos1ce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ3EoEyTdiqiNb5BA3CPFq1dgNEN82GnE"
+        },
+        {
+          "current_key": "AIzaSyC8HWxJl3H3dswTH7NbzB5wWNiIzLQeIHk"
         }
       ],
       "services": {
