@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "315055651663",
+    "project_id": "chivo-test-21d1b",
+    "storage_bucket": "chivo-test-21d1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315055651663:android:2114790899906018c8a33a",
+        "android_client_info": {
+          "package_name": "chivo.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315055651663-cu4mfc08tqk61p51mosos1ge42dos1ce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ3EoEyTdiqiNb5BA3CPFq1dgNEN82GnE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315055651663-cu4mfc08tqk61p51mosos1ge42dos1ce.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

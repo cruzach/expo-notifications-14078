@@ -3,9 +3,10 @@
     "name": "chivo-notification-test",
     "slug": "chivo-notification-test",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "assetBundlePatterns": ["**/*"],
+    "android": { "package": "chivo.test" },
+    "ios": { "bundleIdentifier": "chivo.test" }
   },
+
   "name": "chivo-notification-test"
 }
