@@ -2,6 +2,7 @@ import Constants from "expo-constants";
 import * as Notifications from "expo-notifications";
 import React, { useState, useEffect, useRef } from "react";
 import { Text, View, Button, Platform } from "react-native";
+import * as Updates from "expo-updates";
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
@@ -29,7 +30,7 @@ export default function App() {
 
     responseListener.current =
       Notifications.addNotificationResponseReceivedListener((response) => {
-        console.log(response);
+        alert(response);
       });
 
     return () => {
@@ -48,6 +49,7 @@ export default function App() {
         justifyContent: "space-around",
       }}
     >
+      <Text>{JSON.string(Updates.manifest)}</Text>
       <Text>Your expo push token: {expoPushToken}</Text>
       <View style={{ alignItems: "center", justifyContent: "center" }}>
         <Text>
