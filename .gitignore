@@ -30,7 +30,7 @@ build/
 local.properties
 *.iml
 *.hprof
-
+android/app/charliecruzan__chivo-notification-test.jks
 # node.js
 #
 node_modules/
