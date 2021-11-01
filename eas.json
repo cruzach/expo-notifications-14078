@@ -1,9 +1,9 @@
 {
   "build": {
-    "release": {},
     "development": {
       "distribution": "internal",
       "android": {
+        "buildType": "apk",
         "gradleCommand": ":app:assembleDebug"
       },
       "ios": {
