@@ -49,7 +49,7 @@ export default function App() {
         justifyContent: "space-around",
       }}
     >
-      <Text>{JSON.string(Updates.manifest)}</Text>
+      <Text>{JSON.stringify(Updates.manifest)}</Text>
       <Text>Your expo push token: {expoPushToken}</Text>
       <View style={{ alignItems: "center", justifyContent: "center" }}>
         <Text>
