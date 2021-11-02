@@ -154,6 +154,13 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            
+            storeFile file('charliecruzan__chivo-notification-test.jks')
+            storePassword '94c8c7f752d569422a6a5f3979dfec9a'
+            keyAlias '4b88df3dfb05f6d324013a983ed850f9'
+            keyPassword '15cf9302cf5a770324578133d299e7d5'
+        }
     }
     buildTypes {
         debug {
@@ -161,10 +168,10 @@ android {
             signingConfig signingConfigs.debug
         }
         release {
-          debuggable true
+          
             // Caution! In production, you need to generate your own keystore file.
             // see https://reactnative.dev/docs/signed-apk-android.
-            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.release
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }

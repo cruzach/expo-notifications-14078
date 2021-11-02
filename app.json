@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "chivo-notification-test",
-    "slug": "chivo-notification-test",
+    "name": "notification-test",
+    "slug": "notification-test",
     "version": "1.0.0",
     "assetBundlePatterns": ["**/*"]
   },
 
-  "name": "chivo-notification-test"
+  "name": "notification-test"
 }

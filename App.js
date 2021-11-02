@@ -2,7 +2,6 @@ import Constants from "expo-constants";
 import * as Notifications from "expo-notifications";
 import React, { useState, useEffect, useRef } from "react";
 import { Text, View, Button, Platform } from "react-native";
-import * as Updates from "expo-updates";
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
@@ -14,6 +13,8 @@ Notifications.setNotificationHandler({
 
 export default function App() {
   const [expoPushToken, setExpoPushToken] = useState("");
+  const [devicePushToken, setDevicePushToken] = useState("");
+
   const [notification, setNotification] = useState(false);
   const notificationListener = useRef();
   const responseListener = useRef();
@@ -22,6 +23,9 @@ export default function App() {
     registerForPushNotificationsAsync().then((token) =>
       setExpoPushToken(token)
     );
+    Notifications.getDevicePushTokenAsync().then((token) => {
+      setDevicePushToken(token.data);
+    });
 
     notificationListener.current =
       Notifications.addNotificationReceivedListener((notification) => {
@@ -30,7 +34,7 @@ export default function App() {
 
     responseListener.current =
       Notifications.addNotificationResponseReceivedListener((response) => {
-        alert(response);
+        console.log("response received");
       });
 
     return () => {
@@ -49,8 +53,8 @@ export default function App() {
         justifyContent: "space-around",
       }}
     >
-      <Text>{JSON.stringify(Updates.manifest)}</Text>
       <Text>Your expo push token: {expoPushToken}</Text>
+      <Text>Your device push token: {devicePushToken}</Text>
       <View style={{ alignItems: "center", justifyContent: "center" }}>
         <Text>
           Title: {notification && notification.request.content.title}{" "}
